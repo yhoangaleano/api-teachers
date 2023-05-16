@@ -4,7 +4,12 @@
   "description": "Esta API está diseñada para gestionar profesores utilizando TypeScript, NodeJS, Express y Prisma. Sigue principios de arquitectura limpia y está construida usando programación orientada a objetos (POO) para los estudiantes de la UPB.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prisma:generate": "prisma generate --schema=./src/schema.prisma",
+    "serve": "node dist/index.js",
+    "start": "npm-run-all prisma:generate serve",
+    "dev": "ts-node-dev ./src/index.ts",
+    "start:dev": "npm-run-all prisma:generate dev"
   },
   "repository": {
     "type": "git",
