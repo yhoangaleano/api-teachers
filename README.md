@@ -32,7 +32,7 @@ CREATE TABLE teacher (
 7. Instalar dependencias:
  - Dependencias del proyecto: `npm install @prisma/client cors dotenv express morgan reflect-metadata`
  - Dependencias de desarrollo: `npm install -D @types/cors @types/express @types/morgan @types/node @types/swagger-jsdoc @types/swagger-ui-express npm-run-all prisma swagger-jsdoc swagger-ui-express ts-node ts-node-dev tsc-watch typescript`
-8. Ejecutar el comando `tsc --init` para inicializar un proyecto TypeScript. Al ejecutar este comando, se crea un archivo de configuración llamado `tsconfig.json` en el directorio actual del proyecto. Este archivo contiene la configuración predeterminada para el proyecto TypeScript y permite personalizar las opciones del compilador TypeScript según las necesidades del proyecto.
+8. Ejecutar el comando `npx tsc --init` para inicializar un proyecto TypeScript. Al ejecutar este comando, se crea un archivo de configuración llamado `tsconfig.json` en el directorio actual del proyecto. Este archivo contiene la configuración predeterminada para el proyecto TypeScript y permite personalizar las opciones del compilador TypeScript según las necesidades del proyecto.
 9. Modificar archivo `tsconfig.json`:
 ```json
 {
